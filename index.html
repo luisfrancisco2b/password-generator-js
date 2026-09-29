@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Senhas</title>
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Project JS -->
+    <script src="js/app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+
+        <div id="register-container">
+
+            <div id="register-banner">
+
+                <div id="banner-layer">
+                    <h1>Seja bem-vindo(a)</h1>
+                </div>
+            </div>
+
+            <div id="register-form">
+                <h2>Crie sua Conta:</h2>
+
+                <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
+
+                <!-- Name -->
+                <div class="form-control">
+                    <label for="name">Nome:</label>
+
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome">
+                </div>
+
+                <!-- E-mail -->
+                <div class="form-control">
+                    <label for="email">Email:</label>
+
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+                </div>
+
+                <!-- Password -->
+                <div class="form-control">
+                    <label for="password">Senha:</label>
+
+                    <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+                </div>
+
+
+                <p>Quer ajuda para criar um senha segura?
+                    <span id="generate-password">Clique aqui.</span>
+                </p>
+
+                <!-- Generated password -->
+                <div id="generated-password">
+                    <p>Aqui está a sua senha:</p>
+                    <h4></h4>
+                </div>
+
+                <!-- Check password -->
+                <div class="form-control">
+                    <label for="confirmpassword">Confirmação sua Senha:</label>
+
+                    <input type="text" type="confirmpassword" name="confirmpassword" id="confirmpassword"
+                        placeholder="Confirme a sua senha">
+                </div>
+
+                <!-- Button -->
+                <input type="submit" value="Cadastrar-se">
+            </div>
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
