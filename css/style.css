@@ -6,15 +6,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #333;
 }
 
-html {
+html,
+body {
+  height: auto;
   min-height: 100vh;
 }
 
-body {
-  background-color: blue;
+html {
+  background: linear-gradient(180deg, #ea03ff 0%, #0097ff 100%);
 }
+
+/* body {
+  background-color: blue;
+} */
 
 #register-container {
   /* border: 1px solid black; */
