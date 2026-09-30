@@ -44,11 +44,20 @@ input:focus {
   width: 50%;
 }
 
-.img-container h1 {
-  text-align: center;
-  margin: 260px auto;
+#banner-layer {
+  background-color: rgb(25, 11, 122, 0.7);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#banner-layer h1 {
+  font-size: 3.3rem;
   color: #fff;
-  opacity: 1;
+  margin-bottom: 1.5rem;
+  word-spacing: 25rem;
 }
 
 #register-form {
