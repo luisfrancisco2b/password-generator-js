@@ -33,13 +33,15 @@ input:focus {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+/* #register-form{
+
+} */
+
 #register-banner {
-  width: 500px;
-  height: 550px;
   background-image: url("../img/bg-form.jpg");
   background-position: center;
   background-size: cover;
-  opacity: 0.6;
+  width: 50%;
 }
 
 .img-container h1 {
