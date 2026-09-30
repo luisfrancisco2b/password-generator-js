@@ -75,9 +75,10 @@ input:focus {
 }
 
 #register-form p {
-  font-size: 0.9rem;
-  color: grey;
-  margin: 10px auto;
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 #generate-password {
