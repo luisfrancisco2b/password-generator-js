@@ -108,6 +108,22 @@ input:focus {
   color: #0097ff;
 }
 
+#register-form #generated-password {
+  border: 1px solid #0097ff;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+#register-form #generated-password p {
+  color: #81d340;
+  margin-bottom: 0.5rem;
+}
+
 #register-form input[type="submit"] {
   flex: 1;
   padding: 15px 5px;
