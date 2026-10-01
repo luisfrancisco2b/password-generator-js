@@ -117,6 +117,7 @@ input:focus {
   color: #333;
   padding: 0.4rem;
   margin-bottom: 1rem;
+  display: none;
 }
 
 #register-form #generated-password p {
@@ -125,15 +126,25 @@ input:focus {
 }
 
 #register-form input[type="submit"] {
-  flex: 1;
-  padding: 15px 5px;
+  background-color: #81d340;
   border: none;
-  border-radius: 10px;
-  width: 120px;
-  height: 100px;
+  border-radius: 2rem;
+  opacity: 0.8;
+  max-width: 150px;
+  padding: 1rem 1.4rem;
   color: #fff;
   font-size: 0.9rem;
   font-weight: bold;
-  background-color: rgb(7, 225, 73);
   align-self: flex-end;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+#register-form input[type="submit"]:hover {
+  transform: translateY(-5px);
+  opacity: 1;
+}
+
+#register-form input[type="submit"]:active {
+  transform: scale(0.91);
 }
