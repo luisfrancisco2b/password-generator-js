@@ -23,6 +23,7 @@ input:focus {
   outline: none;
 }
 
+/* Register-container */
 #register-container {
   max-width: 900px;
   min-height: 80vh;
@@ -33,10 +34,7 @@ input:focus {
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-/* #register-form{
-
-} */
-
+/* Register-banner */
 #register-banner {
   background-image: url("../img/bg-form.jpg");
   background-position: center;
@@ -44,6 +42,7 @@ input:focus {
   width: 50%;
 }
 
+/* Banner-layer */
 #banner-layer {
   background-color: rgb(25, 11, 122, 0.7);
   height: 100%;
@@ -60,6 +59,7 @@ input:focus {
   word-spacing: 25rem;
 }
 
+/* Register-form  */
 #register-form {
   background-color: #fdfdfd;
   width: 50%;
@@ -81,6 +81,7 @@ input:focus {
   text-align: center;
 }
 
+/* Form-control */
 .form-control {
   display: flex;
   flex-direction: column;
@@ -98,6 +99,7 @@ input:focus {
   padding: 0.6rem 0;
 }
 
+/* Generate-password */
 #generate-password {
   font-weight: bold;
   cursor: pointer;
@@ -108,6 +110,7 @@ input:focus {
   color: #0097ff;
 }
 
+/* Generated-password */
 #register-form #generated-password {
   border: 1px solid #0097ff;
   border-radius: 4px;
@@ -125,6 +128,7 @@ input:focus {
   margin-bottom: 0.5rem;
 }
 
+/* Register-form input */
 #register-form input[type="submit"] {
   background-color: #81d340;
   border: none;
