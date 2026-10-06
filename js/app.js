@@ -15,10 +15,14 @@ const getNameEmailUser = () => {
 };
 
 const getLetterLowerCase = () => {
-  console.log(String.fromCharCode(69));
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 };
 
-getLetterLowerCase();
+const getLetterUpperCase = () => {
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+};
+
+console.log(getLetterLowerCase(), getLetterUpperCase());
 
 // Events
 btnSubmit.addEventListener("click", () => {
