@@ -22,7 +22,22 @@ const getLetterUpperCase = () => {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 };
 
-console.log(getLetterLowerCase(), getLetterUpperCase());
+const getNumber = () => {
+  return Math.floor(Math.random() * 10).toString();
+};
+
+const getSymbols = () => {
+  const symbols = "!#$%&'()*+,-./:;<=>?@[]^_`{}~";
+
+  return symbols[Math.floor(Math.random() * symbols.length)];
+};
+
+console.log(
+  getLetterLowerCase(),
+  getLetterUpperCase(),
+  getNumber(),
+  getSymbols(),
+);
 
 // Events
 btnSubmit.addEventListener("click", () => {
