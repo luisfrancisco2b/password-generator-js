@@ -38,6 +38,36 @@ const getSymbols = () => {
   return symbols[Math.floor(Math.random() * symbols.length)];
 };
 
+// Function to generate password
+const generatePassword = (
+  getLetterLowerCase,
+  getLetterUpperCase,
+  getNumber,
+  getSymbols,
+) => {
+  let password = "";
+
+  const passwordLength = 10;
+
+  const generators = [
+    getLetterLowerCase,
+    getLetterUpperCase,
+    getNumber,
+    getSymbols,
+  ]
+
+  for (let i = 0; i < passwordLength; i += 4) {
+
+    generators.forEach(() => {
+
+      const randomValue = generators[Math.floor(Math.random() * generators.length)]()
+
+      console.log(randomValue)
+    })
+
+  }
+};
+
 console.log(
   getLetterLowerCase(),
   getLetterUpperCase(),
@@ -51,5 +81,10 @@ btnSubmit.addEventListener("click", () => {
 });
 
 generatePasswordButton.addEventListener("click", () => {
-  console.log("teste");
+  generatePassword(
+    getLetterLowerCase,
+    getLetterUpperCase,
+    getNumber,
+    getSymbols,
+  )
 });
