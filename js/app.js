@@ -5,6 +5,7 @@ const btnSubmit = document.querySelector("#btnSubmit");
 
 const generatePasswordButton = document.querySelector("#generate-password");
 const generatedPasswordElement = document.querySelector("#generated-password");
+const generatedPasswordElementText = document.querySelector("#generated-password h4");
 
 // Funtions
 
@@ -62,18 +63,18 @@ const generatePassword = (
 
       const randomValue = generators[Math.floor(Math.random() * generators.length)]()
 
-      console.log(randomValue)
+      password += randomValue
     })
 
   }
-};
 
-console.log(
-  getLetterLowerCase(),
-  getLetterUpperCase(),
-  getNumber(),
-  getSymbols(),
-);
+  password = password.slice(0, passwordLength)
+
+  generatedPasswordElementText.textContent = password
+
+  generatedPasswordElement.style.display = "block"
+
+};
 
 // Events
 btnSubmit.addEventListener("click", () => {
