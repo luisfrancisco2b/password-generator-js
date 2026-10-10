@@ -39,7 +39,7 @@ const getSymbols = () => {
   return symbols[Math.floor(Math.random() * symbols.length)];
 };
 
-// Function to generate password
+// Function to generate a password with at least one character of each type 
 const generatePassword = (
   getLetterLowerCase,
   getLetterUpperCase,
@@ -57,10 +57,12 @@ const generatePassword = (
     getSymbols,
   ]
 
+  // Each for adds 4 characters, so we may generate more than passwordLength
   for (let i = 0; i < passwordLength; i += 4) {
 
     generators.forEach(() => {
 
+      // Pick a random generator and call it to get one character
       const randomValue = generators[Math.floor(Math.random() * generators.length)]()
 
       password += randomValue
@@ -68,6 +70,7 @@ const generatePassword = (
 
   }
 
+  // Cut the extra characters so the password has the exactly passwordLength characters
   password = password.slice(0, passwordLength)
 
   generatedPasswordElementText.textContent = password
