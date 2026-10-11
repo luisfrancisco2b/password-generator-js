@@ -144,9 +144,17 @@ input:focus {
   transform: scale(0.91);
 }
 
-/* #open-generate-password:hover {
+/* Open Generate Password */
+#open-generate-password {
+  font-weight: bold;
+  font-size: 0.8rem;
+  transition: 0.4s ease;
+}
+
+#open-generate-password:hover {
   color: #0097ff;
-} */
+  cursor: pointer;
+}
 
 #generate-options {
   margin-bottom: 1rem;
