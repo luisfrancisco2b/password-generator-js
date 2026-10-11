@@ -101,13 +101,19 @@ input:focus {
 
 /* Generate-password */
 #generate-password {
+  display: flex;
+  align-self: center;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s ease;
 }
 
 #generate-password:hover {
-  color: #0097ff;
+  transform: translateY(-5px);
+}
+
+#generate-password:active {
+  transform: scale(0.91);
 }
 
 /* Generated-password */
