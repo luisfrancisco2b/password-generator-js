@@ -99,23 +99,6 @@ input:focus {
   padding: 0.6rem 0;
 }
 
-/* Generate-password */
-#generate-password {
-  display: flex;
-  align-self: center;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.4s ease;
-}
-
-#generate-password:hover {
-  transform: translateY(-5px);
-}
-
-#generate-password:active {
-  transform: scale(0.91);
-}
-
 /* Generated-password */
 #register-form #generated-password {
   border: 1px solid #0097ff;
@@ -181,4 +164,34 @@ input:focus {
   max-width: 30px;
   text-align: center;
   border: 1px solid #ccc;
+}
+
+/* Generate-password */
+#generate-password {
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+  width: 200px;
+  margin: 0.5rem 6.5rem;
+}
+
+#generate-password:hover {
+  transform: translateY(-5px);
+}
+
+#generate-password:active {
+  transform: scale(0.91);
+}
+
+/* Copy Button */
+#copy-password {
+  margin: 1rem auto;
+}
+
+#copy-password:hover {
+  transform: translateY(-5px);
+}
+
+#copy-password:active {
+  transform: scale(0.91);
 }
