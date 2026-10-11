@@ -129,7 +129,9 @@ input:focus {
 }
 
 /* Register-form input */
-#register-form input[type="submit"] {
+#register-form input[type="submit"],
+#generate-options button,
+#copy-password {
   background-color: #81d340;
   border: none;
   border-radius: 2rem;
