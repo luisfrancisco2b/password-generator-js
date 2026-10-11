@@ -165,9 +165,12 @@ input:focus {
   flex-direction: row;
 }
 
-#generate-options .form-control input[type="text"] {
-  width: 40px;
+#generate-options label {
+  font-size: 0.8rem;
+}
+
+#generate-options input[type="text"] {
+  max-width: 30px;
   text-align: center;
-  border: 1px solid black;
-  padding: 0.5rem;
+  border: 1px solid #ccc;
 }
