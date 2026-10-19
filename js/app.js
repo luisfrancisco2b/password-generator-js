@@ -57,17 +57,30 @@ const generatePassword = (
 ) => {
   let password = "";
 
-  const passwordLength = 10;
+  const passwordLength = +lengthInput.value;
 
-  const generators = [
-    getLetterLowerCase,
-    getLetterUpperCase,
-    getNumber,
-    getSymbols,
-  ]
+  const generators = []
+
+  if (lettersInput.checked) {
+    generators.push(getLetterLowerCase, getLetterUpperCase)
+  }
+
+  if (numbersInput.checked) {
+    generators.push(getNumber)
+  }
+
+  if (symbolsInput.checked) {
+    generators.push(getSymbols)
+  }
+
+  console.log(generators.length)
+
+  if (generators.length === 0) {
+    return;
+  }
 
   // Each for adds 4 characters, so we may generate more than passwordLength
-  for (let i = 0; i < passwordLength; i += 4) {
+  for (let i = 0; i < passwordLength; i += generators.length) {
 
     generators.forEach(() => {
 
