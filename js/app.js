@@ -7,6 +7,15 @@ const generatePasswordButton = document.querySelector("#generate-password");
 const generatedPasswordElement = document.querySelector("#generated-password");
 const generatedPasswordElementText = document.querySelector("#generated-password h4");
 
+// New Fucntionalities
+const openCloseGeneratorButton = document.querySelector("#open-generate-options")
+const generatePasswordContainer = document.querySelector("#generate-options")
+const lengthInput = document.querySelector("#length")
+const lettersInput = document.querySelector("#letters")
+const numbersInput = document.querySelector("#numbers")
+const symbolsInput = document.querySelector("#symbols")
+const copyPasswordButton = document.querySelector("#copy-password")
+
 // Funtions
 
 // Get User's name and email function
@@ -92,3 +101,7 @@ generatePasswordButton.addEventListener("click", () => {
     getSymbols,
   )
 });
+
+openCloseGeneratorButton.addEventListener("click", () => {
+  generatePasswordContainer.classList.toggle("hide")
+})
