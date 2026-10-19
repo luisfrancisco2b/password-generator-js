@@ -26,7 +26,6 @@ A password generator built from scratch with **HTML5**, **CSS3**, and **Vanilla 
 - CSS3
 - JavaScript (Vanilla)
 
-
 ## 🚀 How to Run the Project Locally
 
 1. Clone the repository
@@ -41,7 +40,7 @@ A password generator built from scratch with **HTML5**, **CSS3**, and **Vanilla 
 
 ## 🔮 Future Improvements
 
-- [ ] Implement password generation logic
+- [x] Implement password generation logic
 - [ ] Add password length and character type options
 
 ---

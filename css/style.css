@@ -109,7 +109,7 @@ input:focus {
   color: #333;
   padding: 0.4rem;
   margin-bottom: 1rem;
-  /* display: none; */
+  display: none;
 }
 
 #register-form #generated-password p {
@@ -207,4 +207,8 @@ input:focus {
 
 #copy-password:active {
   transform: scale(0.91);
+}
+
+.hide {
+  display: none;
 }
