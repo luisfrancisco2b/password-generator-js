@@ -15,6 +15,7 @@ const lettersInput = document.querySelector("#letters")
 const numbersInput = document.querySelector("#numbers")
 const symbolsInput = document.querySelector("#symbols")
 const copyPasswordButton = document.querySelector("#copy-password")
+const errorMessageOptions = document.querySelector("#options-error")
 
 // Funtions
 
@@ -43,6 +44,8 @@ const getSymbols = () => {
 // Function to generate a password using the selected character types
 const generatePassword = () => {
 
+  errorMessageOptions.classList.add("hide")
+
   let password = "";
 
   const passwordLength = +lengthInput.value;
@@ -62,6 +65,7 @@ const generatePassword = () => {
   }
 
   if (generators.length === 0) {
+    errorMessageOptions.classList.remove("hide")
     return;
   }
 
@@ -84,7 +88,6 @@ const generatePassword = () => {
   generatedPasswordElementText.textContent = password
 
   generatedPasswordElement.style.display = "block"
-
 };
 
 // Events
@@ -99,6 +102,10 @@ generatePasswordButton.addEventListener("click", () => {
 // Show or hide the options painel
 openCloseGeneratorButton.addEventListener("click", () => {
   generatePasswordContainer.classList.toggle("hide")
+
+  generatedPasswordElement.style.display = "none"
+
+
 })
 
 // Copy the generated password and show a feedback on the button for 2 seconds
