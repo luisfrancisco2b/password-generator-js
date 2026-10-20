@@ -18,29 +18,29 @@ const copyPasswordButton = document.querySelector("#copy-password")
 
 // Funtions
 
-// Function to get letter lower case
+// Function to get a lowercase letter
 const getLetterLowerCase = () => {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 };
 
-// Function to get letter upper case
+// Function to get an uppercase letter
 const getLetterUpperCase = () => {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 };
 
-// Function to get number
+// Function to get a number
 const getNumber = () => {
   return Math.floor(Math.random() * 10).toString();
 };
 
-// Function to get symbols
+// Function to get a symbols
 const getSymbols = () => {
   const symbols = "!#$%&'()*+,-./:;<=>?@[]^_`{}~";
 
   return symbols[Math.floor(Math.random() * symbols.length)];
 };
 
-// Function to generate a password with at least one character of each type 
+// Function to generate a password using the selected character types
 const generatePassword = () => {
 
   let password = "";
@@ -65,7 +65,7 @@ const generatePassword = () => {
     return;
   }
 
-  // Each for adds 4 characters, so we may generate more than passwordLength
+  // Each lop add one characters of each selected type,    so we may generate more than passwordLength
   for (let i = 0; i < passwordLength; i += generators.length) {
 
     generators.forEach(() => {
@@ -88,20 +88,20 @@ const generatePassword = () => {
 };
 
 // Events
-btnSubmit.addEventListener("click", () => {
-  getNameEmailUser();
-});
 
+// Generate a new password when the generate button is clicked 
 generatePasswordButton.addEventListener("click", () => {
 
   generatePassword()
 
 });
 
+// Show or hide the options painel
 openCloseGeneratorButton.addEventListener("click", () => {
   generatePasswordContainer.classList.toggle("hide")
 })
 
+// Copy the generated password and show a feedback on the button for 2 seconds
 copyPasswordButton.addEventListener("click", () => {
 
   const password = generatedPasswordElementText.innerText
