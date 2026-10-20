@@ -99,6 +99,14 @@ input:focus {
   padding: 0.6rem 0;
 }
 
+/* Error Message */
+#generate-options #options-error {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
 /* Generated-password */
 #register-form #generated-password {
   border: 1px solid #0097ff;
