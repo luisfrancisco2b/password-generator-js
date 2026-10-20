@@ -105,7 +105,11 @@ openCloseGeneratorButton.addEventListener("click", () => {
 
   generatedPasswordElement.style.display = "none"
 
+  lengthInput.value = 10
 
+  lettersInput.checked = false
+  numbersInput.checked = false
+  symbolsInput.checked = false
 })
 
 // Copy the generated password and show a feedback on the button for 2 seconds
