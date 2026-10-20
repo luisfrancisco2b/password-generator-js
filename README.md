@@ -1,24 +1,19 @@
 # 🔐 Password Generator (Vanilla JavaScript)
 
-> 🚧 **Work in progress** — this project is under active development.
-
-A password generator built from scratch with **HTML5**, **CSS3**, and **Vanilla JavaScript**. The generator is integrated into an account sign-up form, offering users help creating a secure password directly during registration.
+A password generator built from scratch with **HTML5**, **CSS3**, and **Vanilla JavaScript**. It is part of an account sign-up form and lets users choose the password length and character types, generate a password, and copy it to the clipboard.
 
 ## 🖼️ Preview
 
-![Sign-up form preview](img/desktop-preview.png)
+![Password generator preview](img/desktop-preview.png)
 
-## 📌 Current Progress
+## ✨ Features
 
-- ✅ HTML structure completed
-- ✅ CSS styling completed
-- 🚧 JavaScript logic in development
-
-## ✨ Planned Features
-
-- Generate secure passwords directly from the sign-up form
-- Customizable password options (length and character types — to be defined during JS implementation)
-- Easy way to copy the generated password
+- ✅ Choose the password length
+- ✅ Pick the character types: lowercase and uppercase letters, numbers and symbols
+- ✅ Generate a new password with the selected options
+- ✅ Copy the generated password to the clipboard with one click
+- ✅ Warning message when no character type is selected
+- ✅ Options reset when the panel is closed
 
 ## 🛠️ Tech Stack
 
@@ -29,19 +24,29 @@ A password generator built from scratch with **HTML5**, **CSS3**, and **Vanilla 
 ## 🚀 How to Run the Project Locally
 
 1. Clone the repository
-   ```bash
+
+```bash
    git clone https://github.com/luisfrancisco2b/password-generator-js
-   ```
+```
+
 2. Navigate to the project folder
-   ```bash
+
+```bash
    cd password-generator-js
-   ```
+```
+
 3. Open `index.html` in your browser, or run it with Live Server
 
-## 🔮 Future Improvements
+## ⚠️ Notes
 
-- [x] Implement password generation logic
-- [ ] Add password length and character type options
+- The sign-up form is visual only. It does not send data or authenticate users.
+- Passwords are generated with `Math.random()`, which is not cryptographically secure. This project is for study purposes. For real applications, use `crypto.getRandomValues()`.
+
+## 🔮 Possible Improvements
+
+- [ ] Replace `Math.random()` with `crypto.getRandomValues()`
+- [ ] Guarantee at least one character of each selected type
+- [ ] Show a visual message instead of the browser alert
 
 ---
 
