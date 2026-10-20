@@ -7,7 +7,7 @@ const generatePasswordButton = document.querySelector("#generate-password");
 const generatedPasswordElement = document.querySelector("#generated-password");
 const generatedPasswordElementText = document.querySelector("#generated-password h4");
 
-// New Fucntionalities
+// New Functionalities
 const openCloseGeneratorButton = document.querySelector("#open-generate-options")
 const generatePasswordContainer = document.querySelector("#generate-options")
 const lengthInput = document.querySelector("#length")
@@ -17,14 +17,6 @@ const symbolsInput = document.querySelector("#symbols")
 const copyPasswordButton = document.querySelector("#copy-password")
 
 // Funtions
-
-// Get User's name and email function
-const getNameEmailUser = () => {
-  let nameUser = nameInput.value.trim();
-  let emailUser = emailInput.value.trim();
-
-  console.log(nameUser, emailUser);
-};
 
 // Function to get letter lower case
 const getLetterLowerCase = () => {
@@ -49,12 +41,8 @@ const getSymbols = () => {
 };
 
 // Function to generate a password with at least one character of each type 
-const generatePassword = (
-  getLetterLowerCase,
-  getLetterUpperCase,
-  getNumber,
-  getSymbols,
-) => {
+const generatePassword = () => {
+
   let password = "";
 
   const passwordLength = +lengthInput.value;
@@ -72,8 +60,6 @@ const generatePassword = (
   if (symbolsInput.checked) {
     generators.push(getSymbols)
   }
-
-  console.log(generators.length)
 
   if (generators.length === 0) {
     return;
@@ -107,21 +93,16 @@ btnSubmit.addEventListener("click", () => {
 });
 
 generatePasswordButton.addEventListener("click", () => {
-  generatePassword(
-    getLetterLowerCase,
-    getLetterUpperCase,
-    getNumber,
-    getSymbols,
-  )
+
+  generatePassword()
+
 });
 
 openCloseGeneratorButton.addEventListener("click", () => {
   generatePasswordContainer.classList.toggle("hide")
 })
 
-copyPasswordButton.addEventListener("click", (e) => {
-
-  e.preventDefault()
+copyPasswordButton.addEventListener("click", () => {
 
   const password = generatedPasswordElementText.innerText
 
